@@ -1,22 +1,25 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <>
-      <div className="container"/>
-      <label htmlFor="exampleDataList" className="form-label">
-        Datalist example
+    <section className="conteiner">
+      <div />
+      <label
+        htmlFor="exampleDataList"
+        className="form-label text-center display-5"
+      >
+        Ingresa tus tareas
       </label>
       <input
         className="form-control"
         list="datalistOptions"
         id="exampleDataList"
-        placeholder="Type to search..."
+        placeholder="Tu tarea"
       />
       <datalist id="datalistOptions" />
       <datalist />
       <div />
-    </>
+    </section>
   );
 }
 
